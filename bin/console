@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require 'bundler/setup'
+
+require 'i18n'
+require 'active_support/all'
+
+require 'translateable_attributes'
+
+require 'irb'
+IRB.start

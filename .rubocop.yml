@@ -1,0 +1,19 @@
+AllCops:
+  Exclude:
+    - tmp/**/*
+    - vendor/**/*
+
+Metrics/LineLength:
+  Max: 145
+
+Style/Documentation:
+  Enabled: false
+
+AssignmentInCondition:
+  Enabled: false
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/MethodLength:
+  Enabled: false
