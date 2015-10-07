@@ -29,7 +29,7 @@ en:
     completed: 'Done'
 ```
 
-Extend a class with `TranslateableAttributes::Methods` and call `translate_attributes` method on it, passing a hash of `attribute_name: 'translation.namespace'` to it:
+Extend a class with `TranslateableAttributes::Methods` and call `translate_attributes` method on it:
 
 ```ruby
 class TranslatedClass
@@ -54,6 +54,10 @@ In addition, `attributes_for_select` class method is defined that returns all av
 ```ruby
 TranslatedClass.states_for_select #=> [['Initiated', 'new'], ['Done', 'completed']]
 ```
+
+`translate_attributes` class method accepts a hash of `attribute_name: 'translation.namespace'`. Translations are looked up by appending attribute value to provided namespace and passing that to `I18n.t` method.
+
+For example, given `Klass.translate_attributes state: 'some.nested.translation.namespace'`, calling `Klass.translated_state 'new'` equals to `I18n.t 'some.nested.translation.namespace.new'`.
 
 ## Development
 
