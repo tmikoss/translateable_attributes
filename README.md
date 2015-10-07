@@ -1,4 +1,4 @@
-# TranslateableAttributes
+# TranslateableAttributes ![Travis CI](https://travis-ci.org/tmikoss/translateable_attributes.svg)
 
 Helper methods to display translated values of object attributes (stored in database, plain object properties, ...)
 
