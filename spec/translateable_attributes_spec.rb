@@ -57,4 +57,10 @@ describe TranslateableAttributes do
         .to([['Jauns', :new], ['Pabeigts', :completed]])
     end
   end
+
+  context '.possible_attributes' do
+    it 'should return all possible values' do
+      expect(Testable.possible_states).to eq [:new, :completed]
+    end
+  end
 end
