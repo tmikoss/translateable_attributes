@@ -17,7 +17,7 @@ module TranslateableAttributes
         end
 
         define_singleton_method "translated_#{attribute}" do |value|
-          I18n.t([namespace, value].join '.')
+          I18n.t([namespace, value].join('.'))
         end
 
         define_singleton_method "possible_#{plural_attribute}" do

@@ -36,7 +36,7 @@ describe TranslateableAttributes do
 
   context '.translated_attribute' do
     it 'should return proper translation' do
-      expect(Testable.translated_state 'new').to eq 'Initiated'
+      expect(Testable.translated_state('new')).to eq 'Initiated'
     end
 
     it 'should handle locale changes' do
