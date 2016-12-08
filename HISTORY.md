@@ -1,3 +1,6 @@
+### 0.3.0
+  Allow options to be passed to I18n translation method calls
+
 ### 0.2.1
   Relax activesupport dependency
 
