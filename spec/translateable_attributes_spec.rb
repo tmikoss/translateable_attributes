@@ -15,6 +15,7 @@ end
 I18n.backend.store_translations :en, states: { new: 'Initiated', completed: 'Done', custom: '%{state}' }
 I18n.backend.store_translations :lv, states: { new: 'Jauns', completed: 'Pabeigts', custom: '%{state}' }
 
+# rubocop: disable Metrics/BlockLength
 describe TranslateableAttributes do
   before { I18n.locale = :en }
 
@@ -64,7 +65,8 @@ describe TranslateableAttributes do
 
   context '.possible_attributes' do
     it 'should return all possible values' do
-      expect(Testable.possible_states).to eq [:new, :completed, :custom]
+      expect(Testable.possible_states).to eq %i(new completed custom)
     end
   end
+  # rubocop: enable Metrics/BlockLength
 end
