@@ -1,6 +1,6 @@
 module TranslateableAttributes
   module Methods
-    # rubocop:disable Metrics/AbcSize
+    # rubocop: disable Metrics/AbcSize
     def translate_attributes(options = {})
       options.each do |attribute, namespace|
         plural_attribute = attribute.to_s.pluralize
@@ -25,5 +25,6 @@ module TranslateableAttributes
         end
       end
     end
+    # rubocop: enable Metrics/AbcSize
   end
 end
