@@ -3,7 +3,7 @@
 # good
 
 Gem::Specification.new do |spec|
-  spec.required_ruby_version = '>= 2.4'
+  spec.required_ruby_version = '>= 2.2'
 end
 
 lib = File.expand_path('lib', __dir__)
