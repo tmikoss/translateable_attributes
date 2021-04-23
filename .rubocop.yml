@@ -8,7 +8,7 @@ Metrics/LineLength:
 
 Metrics/BlockLength:
   Max: 42
-  
+
 Style/Documentation:
   Enabled: false
 
