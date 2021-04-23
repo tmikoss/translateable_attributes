@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 module TranslateableAttributes
   module Methods
     # rubocop:disable Metrics/AbcSize
@@ -25,5 +27,6 @@ module TranslateableAttributes
         end
       end
     end
+    # rubocop:enable Metrics/AbcSize
   end
 end

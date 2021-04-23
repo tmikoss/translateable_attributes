@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require 'spec_helper'
 
 class Testable
@@ -64,7 +66,7 @@ describe TranslateableAttributes do
 
   context '.possible_attributes' do
     it 'should return all possible values' do
-      expect(Testable.possible_states).to eq [:new, :completed, :custom]
+      expect(Testable.possible_states).to eq %i[new completed custom]
     end
   end
 end
