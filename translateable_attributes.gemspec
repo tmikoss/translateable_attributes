@@ -1,12 +1,4 @@
-# frozen_string_literal: true
-
-# good
-
-Gem::Specification.new do |spec|
-  spec.required_ruby_version = '>= 2.2'
-end
-
-lib = File.expand_path('lib', __dir__)
+lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'translateable_attributes/version'
 
