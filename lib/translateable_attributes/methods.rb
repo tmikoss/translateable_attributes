@@ -17,7 +17,7 @@ module TranslateableAttributes
         end
 
         define_singleton_method "translated_#{attribute}" do |value, translation_options = {}|
-          I18n.t([namespace, value].join('.'), translation_options)
+          I18n.t([namespace, value].join('.'), **translation_options)
         end
 
         define_singleton_method "possible_#{plural_attribute}" do
@@ -25,5 +25,6 @@ module TranslateableAttributes
         end
       end
     end
+    # rubocop:enable Metrics/AbcSize
   end
 end
