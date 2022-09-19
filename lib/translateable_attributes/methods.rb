@@ -11,7 +11,9 @@ module TranslateableAttributes
         end
 
         define_singleton_method "#{plural_attribute}_for_select" do
-          I18n.t(namespace).each_with_object([]) do |(value, translation), collection|
+          options = I18n.t(namespace, default: nil) || []
+
+          options.each_with_object([]) do |(value, translation), collection|
             collection << [translation, value]
           end
         end
