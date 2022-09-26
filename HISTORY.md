@@ -1,3 +1,6 @@
+### 0.3.2
+  Default attributes_for_select to an empty array if no translation found - https://github.com/tmikoss/translateable_attributes/pull/4
+
 ### 0.3.1
   Update for compatibility with I18n 1.8.9
 
